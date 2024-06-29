@@ -1,7 +1,9 @@
-# GitHub Codespaces ♥️ Jupyter Notebooks
+# Pooling
 
-Welcome to your shiny new codespace! We've got everything fired up and running for you to explore Python and Jupyter notebooks.
+Pooling layers, serve the dual purposes of mitigating the sensitivity of convolutional layers to location and of spatially downsampling representations.
+### Maximum Pooling and Average pooling
+Pooling operators consist of a fixed-shape window that is slid over all regions in the input according to its stride, computing a single output for each location traversed by the fixed-shape window (sometimes known as the pooling window). Pooling operators are deterministic, typically calculating either the maximum or the average value of the elements in the pooling window. 
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with what you're seeing right now - where you go from here is up to you!
+E.g of a pooling window starting from the upper-left of the input tensor and sliding across it from left to right and top to bottom. At each location that the pooling window hits, it computes the maximum or average value of the input subtensor in the window, depending on whether max or average pooling is employed.
+![image](https://github.com/MutshidziPhaswana/Pooling/assets/53537195/ec14c46b-19a6-4fd5-9203-43f884f5b446)
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
